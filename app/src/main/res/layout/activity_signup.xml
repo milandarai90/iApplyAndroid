@@ -40,6 +40,7 @@
             android:layout_marginBottom="22dp"/>
 
         <EditText
+            android:id="@+id/etName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/full_name"
@@ -51,6 +52,7 @@
             android:background="@drawable/input_field_bg"/>
 
         <EditText
+            android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/email_address"
@@ -62,6 +64,7 @@
             android:background="@drawable/input_field_bg"/>
 
         <EditText
+            android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password"
@@ -73,6 +76,7 @@
             android:background="@drawable/input_field_bg"/>
 
         <EditText
+            android:id="@+id/etCPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/confirm_password"

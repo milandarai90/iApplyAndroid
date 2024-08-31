@@ -41,7 +41,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="emailaddress.com"
+            android:text="your email"
             android:textSize="14sp"
             android:fontFamily="@font/outfit_semibold"
             android:layout_gravity="center"
@@ -59,6 +59,7 @@
         android:orientation="horizontal">
 
         <EditText
+            android:id="@+id/otp1"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@drawable/input_field_bg"
@@ -72,6 +73,7 @@
             />
 
         <EditText
+            android:id="@+id/otp2"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@drawable/input_field_bg"
@@ -85,6 +87,7 @@
             />
 
         <EditText
+            android:id="@+id/otp3"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@drawable/input_field_bg"
@@ -98,6 +101,7 @@
             />
 
         <EditText
+            android:id="@+id/otp4"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@drawable/input_field_bg"
@@ -111,6 +115,7 @@
             />
 
         <EditText
+            android:id="@+id/otp5"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@drawable/input_field_bg"

@@ -18,6 +18,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.example.iapplyapp.model.UserModel;
 import com.example.iapplyapp.retrofit.RetrofitService;
 import com.example.iapplyapp.services.APIService;
+import com.example.iapplyapp.utility.TokenManager;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -56,9 +57,8 @@ public class LoginActivity extends AppCompatActivity {
                         if(response.isSuccessful()){
                             Log.v("loginn","success");
                             UserModel responseBody = response.body();
-//                            Toast.makeText(LoginActivity.this, responseBody.getToken(), Toast.LENGTH_SHORT).show();
-                           Toast.makeText(LoginActivity.this, "Login Successfull", Toast.LENGTH_SHORT).show();
-
+                             Toast.makeText(LoginActivity.this, "Login Successfull", Toast.LENGTH_SHORT).show();
+                            TokenManager.saveToken(getApplicationContext(),responseBody.getToken());
                             startActivity(i);
                         }else{
                             Log.v("loginn","unsuccess");

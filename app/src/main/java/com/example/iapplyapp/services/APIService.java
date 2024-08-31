@@ -14,6 +14,9 @@ public interface APIService {
     @POST("/api/login")
     Call<UserModel> postLogin(@Body UserModel userModel);
 
-    @POST("/api/signup")
+    @POST("/api/register")
     Call<UserModel> postSignup(@Body UserModel userModel);
+
+    @POST("/api/verify_otp")
+    Call<UserModel> verifyOTP(@Body UserModel userModel);
 }
