@@ -66,7 +66,7 @@ public class OTPActivity extends AppCompatActivity {
                             if(responseModel != null){
                                 String message = responseModel.getMessage();
                                 if(Objects.equals(message, "User registered successfully")){
-                                    Toast.makeText(OTPActivity.this, "User registered successfully.", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(OTPActivity.this, "User registered successfully.Login Now", Toast.LENGTH_SHORT).show();
                                     Intent i= new Intent(OTPActivity.this, LoginActivity.class);
                                     startActivity(i);
                                 }
